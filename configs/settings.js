@@ -5,10 +5,10 @@
 
 module.exports = {
 
-    session_secret: 'doracms', // 务必修改
+    session_secret: 'ancjf', // 务必修改
     auth_cookie_name: 'doracms',
     cache_maxAge: Math.floor(Date.now() / 1000) + 24 * 60 * 60, //1 hours
-    serverPort: 8080,
+    serverPort: 80,
     lang: 'zh-CN', // 设置默认语言
     languages: ['zh-CN', 'zh-TW'], // 可选语言
 
@@ -42,7 +42,7 @@ module.exports = {
     redis_ttl: 12, // 过期时间12小时
 
     // 站点基础信息配置
-    DORACMSAPI: 'http://api.html-js.cn', // 系统服务提供商
+    DORACMSAPI: 'http://www.ancjf.com', // 系统服务提供商
     SYSTEMTEMPFORDER: process.cwd() + '/views/', // 系统模板安装目录
     TEMPSTATICFOLDER: process.cwd() + '/public/themes/', // 模板静态文件路径
     SYSTEMLOGPATH: '/home/doraData/logsdir/doracms', // 服务器日志保存目录

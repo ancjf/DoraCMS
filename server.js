@@ -328,7 +328,7 @@ app.use(function (err, req, res) {
 })
 
 const port = process.env.PORT || settings.serverPort
-let dserver = app.listen(port, () => {
+let dserver = app.listen(port, '0.0.0.0', () => {
     console.log(`server started at localhost:${port}`)
 })
 
